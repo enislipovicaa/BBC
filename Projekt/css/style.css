@@ -1,0 +1,128 @@
+html{
+    font-family: arial;
+}
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    padding: 0 10px;
+}
+header,header ul, .sign-in{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+header{
+    padding:0 15px;
+    height:6vh;
+    background-color: black;
+    color:white;
+}
+.logo{
+    flex-basis:5%;
+    padding-right:10px;
+}
+.sign-in{
+    flex-basis:15%;
+    justify-content:flex-start;
+    border-left:1px solid white;
+    height:100%;
+}
+.sign-in *{
+    margin-left:10px;
+}
+header ul{
+    height:100%;
+    flex-basis:65%;
+}
+header ul li{
+    list-style: none;
+    flex-basis:15%;
+    height: 100%;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.more{
+    flex-basis:25%;
+    justify-content: space-around;   
+}
+header a{
+    color:white;
+    text-decoration: none;
+}
+header form{
+    flex-basis:15%;
+    display:flex;
+    justify-content: flex-end;
+
+}
+.search{
+    font-size: 1rem;
+    padding: 2px;
+}
+.intersection{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    height:8vh;
+    padding-bottom: 20px;
+    color:gray;
+}
+.date{
+    font-weight:300;
+}
+.main{
+    height: 55vh;
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-gap:10px;
+}
+.large-article{
+    grid-column: 1/7;
+    grid-row: 1/-1;
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    background-image: url(https://ichef.bbc.co.uk/wwhp/624/cpsprodpb/18171/production/_123937689_mediaitem123937688.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color:white;
+}
+.large-article *{
+    margin:10px;
+}
+.small-article *{
+    margin:5px;
+}
+.small-articles{
+    grid-column: 7 / -1;
+    grid-row:1/-1;
+    display:flex;
+    flex-wrap:wrap;
+    gap:2%;
+    align-content:stretch;
+}
+.small-article{
+    flex-basis:49%;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    background-image: url(https://ichef.bbc.co.uk/wwhp/304/ibroadcast/images/live/p0/bx/yr/p0bxyrf7.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color:white;
+}
+.large-article span{
+    border-left: 5px solid red;
+}
+.small-article span{
+    border-left: 5px solid blue;
+}
+.news{
+    border-left: 5px solid red;
+}
